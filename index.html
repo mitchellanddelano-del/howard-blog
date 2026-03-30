@@ -58,7 +58,8 @@
         <a class="entry-card" href="posts/post-1.html">
           <div class="entry-card__meta">January 2026</div>
           <h3>With Love</h3>
-          <p>
+          <p>First published entry.</p>
+        </a>
 
         <article class="entry-card entry-card--placeholder">
           <div class="entry-card__meta">Coming soon</div>
@@ -100,5 +101,20 @@
       </div>
     </section>
   </main>
+
+  <!-- 🔥 NETLIFY IDENTITY FIX -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", function(user) {
+        if (!user) {
+          window.netlifyIdentity.on("login", function() {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+
 </body>
 </html>
