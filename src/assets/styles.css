@@ -314,21 +314,28 @@ h1{
 }
 
 .post-card{
-  padding:32px 30px;
+  padding:40px 60px;
   background:
     linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.008)),
     linear-gradient(90deg, rgba(200,154,87,.07), rgba(255,255,255,.008) 50%, rgba(200,154,87,.05));
 }
 
+.post-meta{
+  max-width:760px;
+  margin:0 auto 12px;
+}
+
 .post-title{
-  margin:0 0 20px;
+  max-width:760px;
+  margin:0 auto 24px;
   font-size:clamp(2.5rem, 5vw, 4.35rem);
   line-height:.96;
   letter-spacing:-.04em;
 }
 
 .post-content{
-  max-width:980px;
+  max-width:760px;
+  margin:0 auto;
 }
 
 .post-content p{
@@ -371,6 +378,7 @@ h1{
   .entry-list{grid-template-columns:1fr 1fr}
   .topic-grid{grid-template-columns:1fr 1fr}
   .dek{max-width:unset}
+  .post-card{padding:32px 34px}
 }
 
 @media (max-width:640px){
@@ -382,6 +390,11 @@ h1{
   .hero__media{min-height:320px}
   .dek{font-size:1.02rem}
   .post-wrap{padding:22px 0 44px}
+  .post-meta,
+  .post-title,
+  .post-content{
+    max-width:100%;
+  }
   .post-content p{font-size:1rem}
   .post-content blockquote{font-size:1.08rem}
 }
