@@ -1,0 +1,13 @@
+{
+  "name": "howard-mason-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Howard Mason auto-generated blog with Eleventy + Decap CMS",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}
