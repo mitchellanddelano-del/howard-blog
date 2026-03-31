@@ -3,12 +3,11 @@ layout: layouts/post.njk
 title: Special Message
 date: 2026-03-27T09:00:00.000-06:00
 excerpt: >
-  Good people, we interupt the start of today's blog to bring you this Special
-  Message😊:
-
-  I have been asked, more than a few times, whether or not I send my blog out individually or in "pods."
-
-  Some have wanted to comment on the blog or simply say hi to the writer🤗of that same blog, without speaking to everyone who subscribes🤣. Well, I take the time to send out each blog INDIVIDUALLY. It "costs a minute," but apparently and not surprisingly, I am not intelligent enough🙄 to use the app that I secured to make that process less arduous.🤣
+  For some reason,  seeing her in the "moment of my re-awakening," reminded me
+  of the "wonderful" that I reside in, every single day of my life. It reminded
+  me, seriously, of ALL of the beautiful, gifted, and talented people, all of
+  the loving, caring, and giving people, near and far, that I am blessed to "rub
+  shoulders with" on a daily basis.
 ---
 Good people, we interupt the start of today's blog to bring you this Special Message😊:
 
