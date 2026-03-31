@@ -705,4 +705,37 @@ h1{
     bottom:16px;
     font-size:.66rem;
   }
+}/* =========================
+   ARCHIVE READ FULL ONLY
+   safe version
+   ========================= */
+
+.archive-card{
+  display:block;
+}
+
+.archive-card::after{
+  content:"Read full →";
+  display:block;
+  margin-top:10px;
+  text-align:right;
+  color:var(--gold);
+  text-transform:uppercase;
+  letter-spacing:.18em;
+  font-size:.68rem;
+  font-weight:700;
+  opacity:.82;
+  transition:opacity .2s ease, transform .2s ease;
+}
+
+.archive-card:hover::after{
+  opacity:1;
+  transform:translateX(4px);
+}
+
+@media (max-width:640px){
+  .archive-card::after{
+    font-size:.64rem;
+    margin-top:8px;
+  }
 }
