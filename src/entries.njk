@@ -1,0 +1,24 @@
+---
+layout: layouts/base.njk
+title: Entries
+description: Complete archive of Howard Mason entries.
+---
+
+<main class="page-shell archive-page">
+  <section class="section archive-section">
+    <div class="section-head">
+      <p class="section-label">Archive</p>
+      <h2>All entries</h2>
+    </div>
+
+    <div class="archive-list">
+      {% for post in collections.posts %}
+        <a class="archive-card" href="{{ post.url }}">
+          <div class="archive-card__meta">{{ post.data.date | displayDate }}</div>
+          <h3>{{ post.data.title }}</h3>
+          <p>{{ post.data.excerpt or "New entry from Howard Mason." }}</p>
+        </a>
+      {% endfor %}
+    </div>
+  </section>
+</main>
