@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
-title: In the dark
-date: 2026-03-30T18:14:00.000-06:00
+title: In the Dark
+date: 2026-02-06T18:14:00.000-07:00
 excerpt: "When someone in the dark reaches out to you "
 ---
 🎶"When someone in the dark reaches out to you 
