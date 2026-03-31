@@ -1,5 +1,5 @@
 ---
-title: "When someone in the dark reaches out to you "
+title: In the dark
 date: 2026-03-30T18:14:00.000-06:00
 excerpt: "When someone in the dark reaches out to you "
 ---
