@@ -108,7 +108,7 @@ a{text-decoration:none;color:inherit}
 }
 
 .hero__copy{
-  padding:36px;
+  padding:34px 34px 32px;
   background:
     linear-gradient(180deg, rgba(255,255,255,.018), rgba(255,255,255,.008)),
     linear-gradient(90deg, rgba(200,154,87,.08) 0%, rgba(255,255,255,.01) 45%, rgba(200,154,87,.07) 100%);
@@ -131,14 +131,14 @@ a{text-decoration:none;color:inherit}
 
 h1{
   margin:0;
-  font-size:clamp(3.2rem, 6vw, 5.35rem);
-  line-height:.94;
-  letter-spacing:-.05em;
+  font-size:clamp(2.7rem, 5vw, 4.9rem);
+  line-height:.96;
+  letter-spacing:-.045em;
 }
 
 .dek{
   margin:18px 0 0;
-  max-width:20ch;
+  max-width:28ch;
   color:#d2c7bb;
   line-height:1.55;
   font-size:1.15rem;
@@ -345,6 +345,10 @@ h1{
   font-size:1.08rem;
 }
 
+.post-content p + p{
+  margin-top:4px;
+}
+
 .post-content blockquote{
   margin:24px 0 22px;
   padding:16px 0 16px 18px;
@@ -370,6 +374,11 @@ h1{
 .post-content ol{
   color:#d0c6bb;
   line-height:1.82;
+}
+
+.post-content p:last-child,
+.post-content p:nth-last-child(2){
+  color:#efe4d1;
 }
 
 @media (max-width:980px){
