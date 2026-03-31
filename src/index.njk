@@ -19,7 +19,7 @@ description: Notes, reflections, local observations, and stories from Howard Mas
 
       <div class="hero-links">
         <a class="btn btn--solid" href="#entries">Recent entries</a>
-        <a class="btn btn--ghost" href="#categories">Browse topics</a>
+        <a class="btn btn--ghost" href="/entries/">View all entries</a>
       </div>
 
       <div class="about-panel" id="about">
@@ -44,7 +44,7 @@ description: Notes, reflections, local observations, and stories from Howard Mas
     </div>
 
     <div class="entry-list">
-      {% for post in collections.posts %}
+      {% for post in collections.posts.slice(0, 3) %}
         <a class="entry-card" href="{{ post.url }}">
           <div class="entry-card__meta">{{ post.data.date | cardDate }}</div>
           <h3>{{ post.data.title }}</h3>
@@ -52,31 +52,9 @@ description: Notes, reflections, local observations, and stories from Howard Mas
         </a>
       {% endfor %}
     </div>
-  </section>
 
-  <section class="section" id="categories">
-    <div class="section-head">
-      <p class="section-label">Topics</p>
-      <h2>Browse by category</h2>
-    </div>
-
-    <div class="topic-grid">
-      <div class="topic-card">
-        <h3>Life</h3>
-        <p>Personal notes, reflections, and everyday observations.</p>
-      </div>
-      <div class="topic-card">
-        <h3>Local</h3>
-        <p>Neighborhood thoughts, park life, and community pieces.</p>
-      </div>
-      <div class="topic-card">
-        <h3>Politics</h3>
-        <p>Commentary, principles, and civic-minded writing.</p>
-      </div>
-      <div class="topic-card">
-        <h3>Dogs</h3>
-        <p>Park stories, canine encounters, and dog whisperer dispatches.</p>
-      </div>
+    <div class="section-cta">
+      <a class="btn btn--ghost" href="/entries/">View all entries</a>
     </div>
   </section>
 </main>
