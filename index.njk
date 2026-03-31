@@ -1,0 +1,76 @@
+---
+layout: layouts/base.njk
+title: Howard Mason
+description: Notes, reflections, local observations, and stories from Howard Mason.
+---
+
+<main class="page-shell">
+  <section class="hero">
+    <div class="hero__media">
+      <img src="https://cdn.shopify.com/s/files/1/0575/4260/6894/files/31b595bc-797e-42e4-9326-e1b72e58f145_dc8e9bbb-8351-43fc-9f46-9f8db22f5a29.png?v=1774898328" alt="Portrait of Howard Mason">
+    </div>
+
+    <div class="hero__copy">
+      <p class="eyebrow">Officially unofficial</p>
+      <h1>Howard Mason</h1>
+      <p class="dek">
+        Writer, observer, local voice, dog whisperer, and the officially unofficial Mayor of Haskin Park.
+      </p>
+
+      <div class="about-panel" id="about">
+        <h2>About</h2>
+        <p>
+          A clean place for Howard's notes, stories, observations, and straight-from-the-phone entries. Life, local matters, politics, dogs, and whatever else lands on the page.
+        </p>
+      </div>
+
+      <div class="hero-links">
+        <a class="btn btn--solid" href="#entries">Recent entries</a>
+        <a class="btn btn--ghost" href="#categories">Browse topics</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="entries">
+    <div class="section-head">
+      <p class="section-label">Latest</p>
+      <h2>Recent entries</h2>
+    </div>
+
+    <div class="entry-list">
+      {% for post in collections.posts %}
+      <a class="entry-card" href="{{ post.url }}">
+        <div class="entry-card__meta">{{ post.data.date | cardDate }}</div>
+        <h3>{{ post.data.title }}</h3>
+        <p>{{ post.data.excerpt or "New entry from Howard Mason." }}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="section" id="categories">
+    <div class="section-head">
+      <p class="section-label">Topics</p>
+      <h2>Browse by category</h2>
+    </div>
+
+    <div class="topic-grid">
+      <div class="topic-card">
+        <h3>Life</h3>
+        <p>Personal notes, reflections, and everyday observations.</p>
+      </div>
+      <div class="topic-card">
+        <h3>Local</h3>
+        <p>Neighborhood thoughts, park life, and community pieces.</p>
+      </div>
+      <div class="topic-card">
+        <h3>Politics</h3>
+        <p>Commentary, principles, and civic-minded writing.</p>
+      </div>
+      <div class="topic-card">
+        <h3>Dogs</h3>
+        <p>Park wisdom, canine encounters, and dog whisperer dispatches.</p>
+      </div>
+    </div>
+  </section>
+</main>
