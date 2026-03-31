@@ -2,7 +2,14 @@
 layout: layouts/post.njk
 title: In the Dark
 date: 2026-02-06T18:14:00.000-07:00
-excerpt: "When someone in the dark reaches out to you "
+excerpt: |
+  🎶"When someone in the dark reaches out to you 
+  And touches off a spark that comes shining through
+  It tells you, never be afraid
+  Then somewhere in your heart, you can feel the glow
+  A light to keep you warm when the night winds blow
+  Like it was written in the stars, I knew
+  My friend, my someone in the dark was you ... ."🎶
 ---
 🎶"When someone in the dark reaches out to you 
 
