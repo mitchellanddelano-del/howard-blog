@@ -277,7 +277,7 @@ h1{
 
 .entry-card{
   position:relative;
-  padding:22px;
+  padding:22px 22px 54px;
   min-height:240px;
   background:
     linear-gradient(180deg, rgba(255,255,255,.022), rgba(255,255,255,.008)),
@@ -285,24 +285,10 @@ h1{
   transition:transform .25s ease, border-color .25s ease, box-shadow .25s ease;
 }
 
-.entry-card::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:radial-gradient(circle at top right, rgba(127,149,173,.25), transparent 60%);
-  opacity:0;
-  transition:opacity .25s ease;
-  pointer-events:none;
-}
-
 .entry-card:hover{
   transform:translateY(-6px);
   border-color:var(--accent);
   box-shadow:0 24px 46px rgba(0,0,0,.42);
-}
-
-.entry-card:hover::after{
-  opacity:1;
 }
 
 .entry-card h3{
@@ -324,6 +310,32 @@ h1{
   line-height:1.62;
   font-size:.97rem;
   font-weight:500;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:5;
+  overflow:hidden;
+  mask-image:linear-gradient(180deg, #000 0%, #000 74%, transparent 100%);
+  -webkit-mask-image:linear-gradient(180deg, #000 0%, #000 74%, transparent 100%);
+}
+
+.entry-card::after{
+  content:"Read full →";
+  position:absolute;
+  right:20px;
+  bottom:18px;
+  z-index:2;
+  color:var(--gold);
+  text-transform:uppercase;
+  letter-spacing:.18em;
+  font-size:.7rem;
+  font-weight:700;
+  opacity:.8;
+  transition:opacity .2s ease, transform .2s ease;
+}
+
+.entry-card:hover::after{
+  opacity:1;
+  transform:translateX(4px);
 }
 
 .section-cta{
@@ -682,5 +694,15 @@ h1{
 
   .archive-year-heading{
     font-size:1.6rem;
+  }
+
+  .entry-card{
+    padding-bottom:50px;
+  }
+
+  .entry-card::after{
+    right:18px;
+    bottom:16px;
+    font-size:.66rem;
   }
 }
