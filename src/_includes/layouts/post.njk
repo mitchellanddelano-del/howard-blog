@@ -2,14 +2,21 @@
 layout: layouts/base.njk
 ---
 
-<main class="post-wrap">
-  <a class="post-back" href="/">← Back to home</a>
+<main class="post-page">
+  <div class="post-wrap">
+    <a class="post-back" href="/entries/">← Back to entries</a>
 
-  <article class="post-card">
-    <div class="post-meta">{{ date | displayDate }}</div>
-    <h1 class="post-title">{{ title }}</h1>
-    <div class="post-content">
-      {{ content | safe }}
-    </div>
-  </article>
+    <article class="post-card">
+      <div class="post-meta">{{ date | displayDate }}</div>
+      <h1 class="post-title">{{ title }}</h1>
+
+      {% if excerpt %}
+        <p class="post-dek">{{ excerpt }}</p>
+      {% endif %}
+
+      <div class="post-content">
+        {{ content | safe }}
+      </div>
+    </article>
+  </div>
 </main>
