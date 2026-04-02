@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: In the Dark
-date: 2026-02-06T18:14:00.000-07:00
+date: 2026-02-09T18:14:00.000-07:00
 excerpt: |
   🎶"When someone in the dark reaches out to you 
   And touches off a spark that comes shining through
