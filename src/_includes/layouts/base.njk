@@ -1,60 +1,55 @@
----
-layout: layouts/base.njk
-title: Howard Mason
-description: Notes, reflections, local observations, and stories from Howard Mason.
----
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<main class="page-shell">
-  <section class="hero">
-    <div class="hero__media">
-      <img src="https://cdn.shopify.com/s/files/1/0575/4260/6894/files/IMG_9885_hero.jpg?v=1774924461" alt="Howard Mason at Haskin Park">
+  <title>
+    {% if title %}{{ title }} | {% endif %}Howard Mason
+  </title>
+
+  <meta
+    name="description"
+    content="{% if description %}{{ description }}{% else %}Notes, reflections, local observations, and stories from Howard Mason.{% endif %}"
+  >
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Optional: favicon -->
+  <link rel="icon" href="/favicon.ico">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="site-header__inner">
+
+      <a class="site-title" href="/">
+        Howard Mason
+      </a>
+
+      <nav class="site-nav">
+        <a href="/">Home</a>
+        <a href="/entries/">Entries</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+
     </div>
+  </header>
 
-    <div class="hero__copy">
-      <p class="eyebrow">Officially unofficial</p>
-      <h1>Howard Mason</h1>
-      <p class="dek">
-        Writer, speaker, neighborhood voice, and the unofficial Mayor of Haskin Park.
+  <!-- Main content -->
+  {{ content | safe }}
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>
+        Officially unofficial. Howard Mason in partnership with Mitchell &amp; Delano.
       </p>
-
-      <div class="hero-links">
-        <a class="btn btn--solid" href="#entries">Recent entries</a>
-        <a class="btn btn--ghost" href="/entries/">View all entries</a>
-      </div>
-
-      <div class="about-panel" id="about">
-        <h2>About</h2>
-        <p>
-          Howard Mason is a 70-year-old writer, motivational speaker, and beloved neighborhood presence whose life story bridges Chicago street realism and Colorado perspective. Raised on the South Side of Chicago, Howard brought that directness, warmth, and lived wisdom with him when he moved to Boulder at 20.
-        </p>
-        <p>
-          Over the years, he’s become a storyteller in the truest sense: someone who doesn’t just talk, but connects. Around Haskin Park, he’s earned a reputation as its unofficial mayor, a title that says as much about his spirit as it does about his place in the community.
-        </p>
-        <p>
-          Stories, reflections, neighborhood wisdom, and the occasional hard-earned truth from Haskin Park and beyond.
-        </p>
-      </div>
     </div>
-  </section>
+  </footer>
 
-  <section class="section" id="entries">
-    <div class="section-head">
-      <p class="section-label">Latest</p>
-      <h2>Recent entries</h2>
-    </div>
-
-    <div class="entry-list">
-      {% for post in collections.posts.slice(0, 3) %}
-        <a class="entry-card" href="{{ post.url }}">
-          <div class="entry-card__meta">{{ post.data.date | cardDate }}</div>
-          <h3>{{ post.data.title }}</h3>
-          <p>{{ post.data.excerpt or "New entry from Howard Mason." }}</p>
-        </a>
-      {% endfor %}
-    </div>
-
-    <div class="section-cta">
-      <a class="btn btn--ghost" href="/entries/">View all entries</a>
-    </div>
-  </section>
-</main>
+</body>
+</html>
