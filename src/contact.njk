@@ -24,6 +24,7 @@ description: Get in touch with Howard Mason.
         </p>
 
         <div class="contact-email">
+          <span>Email</span>
           <a href="mailto:hma669@aol.com">hma669@aol.com</a>
         </div>
       </div>
@@ -34,12 +35,11 @@ description: Get in touch with Howard Mason.
           method="POST"
           action="/thank-you/"
           data-netlify="true"
-          netlify
           netlify-honeypot="bot-field"
         >
           <input type="hidden" name="form-name" value="contact">
 
-          <p style="display:none;">
+          <p class="hidden-field">
             <label>Don’t fill this out if you're human: <input name="bot-field"></label>
           </p>
 
