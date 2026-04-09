@@ -4,52 +4,31 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>
-    {% if title %}{{ title }} | {% endif %}Howard Mason
-  </title>
+  <title>{% if title %}{{ title }} | {% endif %}Howard Mason</title>
+  <meta name="description" content="{% if description %}{{ description }}{% else %}Notes, reflections, local observations, and stories from Howard Mason.{% endif %}">
 
-  <meta
-    name="description"
-    content="{% if description %}{{ description }}{% else %}Notes, reflections, local observations, and stories from Howard Mason.{% endif %}"
-  >
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="/styles.css">
-
-  <!-- Optional: favicon -->
+  <link rel="stylesheet" href="/assets/styles.css">
   <link rel="icon" href="/favicon.ico">
 </head>
-
 <body>
-
-  <!-- Header -->
   <header class="site-header">
     <div class="site-header__inner">
-
-      <a class="brand" href="/">
-        Howard Mason
-      </a>
+      <a class="brand" href="/">Howard Mason</a>
 
       <nav class="nav" aria-label="Primary navigation">
         <a href="/">Home</a>
         <a href="/entries/">Entries</a>
         <a href="/contact/">Contact</a>
       </nav>
-
     </div>
   </header>
 
-  <!-- Main content -->
   {{ content | safe }}
 
-  <!-- Footer -->
   <footer class="site-footer">
     <div class="site-footer__inner">
-      <p>
-        Officially unofficial. Howard Mason in partnership with Mitchell &amp; Delano.
-      </p>
+      <p>Officially unofficial. Howard Mason in partnership with Mitchell &amp; Delano.</p>
     </div>
   </footer>
-
 </body>
 </html>
