@@ -739,3 +739,100 @@ h1{
     margin-top:8px;
   }
 }
+/* CONTACT PAGE */
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:28px;
+  margin-top:18px;
+}
+
+.contact-copy p{
+  color:#cfc5b9;
+  line-height:1.8;
+  font-size:1.05rem;
+  font-weight:500;
+  margin:0 0 16px;
+}
+
+.contact-email{
+  margin-top:18px;
+}
+
+.contact-email a{
+  font-size:1.2rem;
+  font-weight:700;
+  color:var(--gold);
+  text-decoration:none;
+}
+
+.contact-email a:hover{
+  color:var(--accent);
+}
+
+.contact-form-wrap{
+  padding:24px;
+  border-radius:24px;
+  border:1px solid var(--line);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
+}
+
+.form-field{
+  display:flex;
+  flex-direction:column;
+  margin-bottom:16px;
+}
+
+.form-field label{
+  font-size:.8rem;
+  text-transform:uppercase;
+  letter-spacing:.14em;
+  color:#bdb5a9;
+  margin-bottom:6px;
+  font-weight:600;
+}
+
+.form-field input,
+.form-field textarea{
+  background:#0e1115;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:12px;
+  padding:12px 14px;
+  color:#e7e1d7;
+  font-family:inherit;
+  font-size:.95rem;
+}
+
+.form-field input:focus,
+.form-field textarea:focus{
+  outline:none;
+  border-color:var(--accent);
+}
+
+.hidden-field{
+  position:absolute;
+  left:-9999px;
+  visibility:hidden;
+}
+
+/* THANK YOU PAGE */
+
+.thank-you-copy{
+  max-width:700px;
+}
+
+.thank-you-copy p{
+  color:#cfc5b9;
+  line-height:1.8;
+  font-size:1.05rem;
+  font-weight:500;
+  margin:0 0 16px;
+}
+
+@media (max-width:860px){
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+}
