@@ -46,9 +46,9 @@ description: Notes, reflections, local observations, and stories from Howard Mas
     <div class="entry-list">
       {% for post in collections.posts.slice(0, 3) %}
         <a class="entry-card" href="{{ post.url }}">
-          <div class="entry-card__meta">{{ post.data.date | cardDate }}</div>
+          <div class="entry-card__meta">{{ post.date | cardDate }}</div>
           <h3>{{ post.data.title }}</h3>
-          <p>{{ post.data.excerpt or "New entry from Howard Mason." }}</p>
+          <p>{% if post.data.excerpt %}{{ post.data.excerpt }}{% else %}New entry from Howard Mason.{% endif %}</p>
         </a>
       {% endfor %}
     </div>
