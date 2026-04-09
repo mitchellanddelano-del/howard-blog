@@ -836,19 +836,3 @@ h1{
     grid-template-columns:1fr;
   }
 }
-
-.contact-email{
-  margin-top:8px;
-}
-
-.contact-email a{
-  display:inline-block;
-  font-size:1.2rem;
-  font-weight:700;
-  color:var(--gold);
-  text-decoration:none;
-}
-
-.contact-email a:hover{
-  color:var(--accent);
-}
