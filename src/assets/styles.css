@@ -837,12 +837,18 @@ h1{
   }
 }
 
-/* CONTACT EMAIL POLISH */
-.contact-email span{
-  display:block;
-  font-size:.75rem;
-  letter-spacing:.14em;
-  text-transform:uppercase;
-  color:#bdb5a9;
-  margin-bottom:6px;
+.contact-email{
+  margin-top:8px;
+}
+
+.contact-email a{
+  display:inline-block;
+  font-size:1.2rem;
+  font-weight:700;
+  color:var(--gold);
+  text-decoration:none;
+}
+
+.contact-email a:hover{
+  color:var(--accent);
 }
