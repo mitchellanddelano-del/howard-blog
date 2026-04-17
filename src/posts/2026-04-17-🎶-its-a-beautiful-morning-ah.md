@@ -10,8 +10,6 @@ excerpt: |
   It's your chance to wake up and plan a whole new day
   It's a beautiful morning, ah
 ---
-🎶"It's  a beautiful morning, ah
-
 I think I'll go outside for a while and just smile
 
 Just take in some clean fresh air, boy
